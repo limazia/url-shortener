@@ -1,0 +1,19 @@
+<%- include('partials/header.ejs') %>
+  <div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+      <div class="header">
+        <h1><i class="fas fa-link icon"></i> <%= PAGE_TITLE %></h1>
+        <p>Seu novo encurtador de URL!</p>
+      </div>
+      <div class="col-md-9">
+        <form method="POST" action="/new">
+          <div class="input-link wicon">
+            <i class="fas fa-link left"></i>
+            <input type="url" name="url" class="form-control" placeholder="Cole um link para encurtá-lo">
+            <button class="btn btn-shorten" type="submit">Encurtar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+<%- include('partials/footer.ejs') %>

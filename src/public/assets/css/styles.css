@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9466ff;
+}
+
+img,
+svg {
+  display: block;
+  width: 100%;
+}
+
+button:hover,
+button:focus,
+button:active,
+button:active:focus:not(:disabled):not(.disabled) {
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn:active:focus:not(:disabled):not(.disabled) {
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+
+.form-control {
+  height: 60px;
+  text-indent: 10px;
+  background: #e9ebef;
+  color: #637089;
+  border: none;
+  max-width: 100%;
+  border-radius: 10px;
+}
+.form-control:focus {
+  background: #e9ebef;
+  color: #637089;
+  box-shadow: none;
+}
+.form-control::-moz-placeholder {
+  color: #637089;
+  font-size: 0.9rem;
+}
+.form-control:-ms-input-placeholder {
+  color: #637089;
+  font-size: 0.9rem;
+}
+.form-control::placeholder {
+  color: #637089;
+  font-size: 0.9rem;
+}
+
+.wicon {
+  position: relative;
+}
+.wicon input {
+  text-indent: 30px;
+  color: #aeb0b0;
+  border-radius: 10px;
+}
+.wicon input:focus {
+  box-shadow: none;
+}
+.wicon input::-moz-placeholder {
+  font-size: 0.9rem;
+}
+.wicon input:-ms-input-placeholder {
+  font-size: 0.9rem;
+}
+.wicon input::placeholder {
+  font-size: 0.9rem;
+}
+.wicon .fa,
+.wicon .fas,
+.wicon .far,
+.wicon .fal,
+.wicon .fad,
+.wicon .fab {
+  position: absolute;
+  top: 20px;
+  color: #aeb0b0;
+}
+.wicon .fa.right,
+.wicon .fas.right,
+.wicon .far.right,
+.wicon .fal.right,
+.wicon .fad.right,
+.wicon .fab.right {
+  right: 16px;
+}
+.wicon .fa.left,
+.wicon .fas.left,
+.wicon .far.left,
+.wicon .fal.left,
+.wicon .fad.left,
+.wicon .fab.left {
+  left: 16px;
+}
+
+.input-link .btn-shorten {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  z-index: 4;
+  height: 40px;
+  color: #fff;
+  background: #5ccbb4;
+  border-color: #5ccbb4;
+  border-radius: 6px;
+  transition: ease 0.5s;
+}
+.input-link .btn-shorten:hover {
+  background: #70bdb7;
+  border-color: #70bdb7;
+}
+
+.header {
+  padding: 3rem;
+  text-align: center;
+}
+.header .icon {
+  height: 42px;
+}
+
+.stats {
+  text-align: center;
+}
+.stats span {
+  font-weight: bold;
+}
+.stats p {
+  margin: 10px 0;
+  padding: 0;
+}
+
+.card-stats .card-body p {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+.card-stats .card-body span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.btn-new-short {
+  color: #fff;
+  background: #5ccbb4;
+  border-color: #5ccbb4;
+  border-radius: 6px;
+  transition: ease 0.5s;
+}
+.btn-new-short:hover {
+  color: #fff;
+  background: #70bdb7;
+  border-color: #70bdb7;
+}/*# sourceMappingURL=styles.css.map */

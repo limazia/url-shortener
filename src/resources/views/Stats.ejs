@@ -1,0 +1,40 @@
+<%- include('partials/header.ejs') %>
+  <div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+      <div class="header">
+        <h1><i class="fas fa-link icon"></i> <%= PAGE_TITLE %></h1>
+        <p><%= title %></p>
+      </div>
+      <div class="col-md-9">
+        <div class="stats">
+          <span><%= PAGE_URL %>/<%= data.code %></span>
+          <p>Redireciona para:</p>
+          <span><%= data.url %></span>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <div class="card card-stats">
+              <div class="card-body">
+                <p>Visitas</p>
+                <span><%= data.hits %></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card card-stats">
+              <div class="card-body">
+                <p>Última Visita</p>
+                <span><%= data.updateAt %></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-12">
+            <a href="/" class="btn btn-new-short btn-block">Encurtar nova URL</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<%- include('partials/footer.ejs') %>

@@ -1,0 +1,23 @@
+<%- include('partials/header.ejs') %>
+  <div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+      <div class="header">
+        <h1><i class="fas fa-link icon"></i> <%= PAGE_TITLE %></h1>
+        <p><%= title %></p>
+      </div>
+      <div class="col-md-9">
+        <div class="stats">
+          <span><%= PAGE_URL %>/<%= code %></span>
+          <p>Redireciona para:</p>
+          <span><%= url %></span>
+        </div>
+        <div class="row mt-2">
+          <div class="col-md-12 text-center">
+            <a href="/<%= code %>/stats" class="btn btn-link">Ver estatísticas</a>
+            <a href="/" class="btn btn-new-short btn-block mt-1">Encurtar nova URL</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<%- include('partials/footer.ejs') %>
