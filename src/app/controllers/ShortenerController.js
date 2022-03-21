@@ -67,9 +67,15 @@ class WebController {
   async formShortener(request, response, next) {
     try {
       const { url } = request.body;
+
       const id = cryptoRandomString({ length: 15 });
       const code = generateCode();
 
+      const expression = /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi;
+      const regex = new RegExp(expression);
+ 
+      if (!url.match(regex) || url === null) return response.status(200).redirect("/");
+   
       await connection("links").insert({
         id,
         url,
