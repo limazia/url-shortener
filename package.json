@@ -1,7 +1,7 @@
 {
   "name": "url-shortener",
   "version": "1.0.0",
-  "description": "",
+  "description": "System to shorten url using MySQL and Express",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
